@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EWDU77 3D STORE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">EWDU77<span>3D</span></div>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#boutique">Boutique</a>
+            <a href="#personnalisation">Personnalisation</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <a href="#panier" class="header-button">
+            🛒 Panier (<span id="cart-count">0</span>)
+        </a>
+
+        <a href="#boutique" class="header-button">
+            Découvrir
+        </a>
+    </header>
+
+    <main>
+        <section class="hero" id="accueil">
+
+            <div class="hero-content">
+                <p class="subtitle">L'IMPRESSION 3D SANS LIMITES</p>
+
+                <h1>
+                    CRÉE TON<br>
+                    <span>UNIVERS.</span>
+                </h1>
+
+                <p class="description">
+                    Découvre des créations uniques,
+                    imaginées et fabriquées en impression 3D.
+                </p>
+
+                <a href="#boutique" class="main-button">
+                    Explorer la boutique →
+                </a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="circle">
+                    <span>3D</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="shop" id="boutique">
+
+            <p class="subtitle">NOS CRÉATIONS</p>
+
+            <h2>La boutique</h2>
+
+            <div class="products" id="product-list">
+                <!-- Produits ajoutés avec JavaScript -->
+            </div>
+
+        </section>
+
+        <section class="shop" id="panier">
+    <p class="subtitle">VOTRE SÉLECTION</p>
+    <h2>Mon panier</h2>
+
+    <div id="cart-items"></div>
+
+    <h3 id="cart-total">Total : 0.00 €</h3>
+
+    <button class="main-button" onclick="showOrderForm()">
+        Passer commande
+    </button>
+</section>
+
+<section class="contact" id="commande">
+    <h2>Finaliser ma commande</h2>
+
+    <form id="order-form">
+        <input type="text" id="customer-name"
+            placeholder="Ton nom" required>
+
+        <input type="email" id="customer-email"
+            placeholder="Ton adresse email" required>
+
+        <textarea id="customer-message"
+            placeholder="Message ou demande particulière"></textarea>
+
+        <button type="submit" class="main-button">
+            Envoyer ma demande
+        </button>
+    </form>
+</section>
+
+
+        <section class="custom" id="personnalisation">
+            <p class="subtitle">TON IDÉE, NOTRE CRÉATION</p>
+            <h2>Du sur-mesure.</h2>
+            <p>
+                Tu as une idée de création en impression 3D ?
+                Propose-nous ton projet !
+            </p>
+            <a href="#contact" class="main-button">
+                Demander une création
+            </a>
+        </section>
+
+        <section class="contact" id="contact">
+            <p class="subtitle">UNE QUESTION ?</p>
+            <h2>Contacte-nous.</h2>
+
+            <p>
+                Une demande, une commande ou une création personnalisée ?
+            </p>
+
+            <a href="ewdu77.ewdu77@gmail.com"
+               class="main-button">
+                Nous contacter
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 EWDU77 3D STORE — Tous droits réservés.
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
